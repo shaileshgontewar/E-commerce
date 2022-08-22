@@ -154,12 +154,11 @@ footer{
     transition: all 0.5s ease-in-out;
   }
 }
-@media only screen and (max-width:388px ) and (min-width: 300px){
-  
+@media only screen and (max-width:400px ) and (min-width:250px){
     html {
-      font-size: 40.5%;
+      font-size: 40%;
     }
-    .footer-container .column-f2{
+    .footer-container >.column-f2 {
       display: none;
     }
 }
