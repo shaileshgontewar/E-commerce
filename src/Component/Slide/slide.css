@@ -1,0 +1,13 @@
+.slide-img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.slide-img h3{
+    text-align: center;
+}
+.slide-img img{
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
