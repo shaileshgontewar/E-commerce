@@ -12,7 +12,9 @@ const Header = () => {
       <TopHeader />
       <header>
         <div className="head-nav">
-          <img src="./images/ishop.png" alt="logo" className="logo" />
+          <b className="logo">
+            sg<span>Tech</span>
+          </b>
           <button
             className="mobile-menu-icon"
             onClick={() => setMobile(!mobile)}

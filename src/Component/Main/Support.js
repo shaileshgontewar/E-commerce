@@ -3,6 +3,10 @@ import "./product.css";
 const Support = () => {
   return (
     <>
+      <div className="news-container">
+        <h2>News</h2>
+        <button className="news-btn">Click Here</button>
+      </div>
       <div className="support-container">
         <div className="support">
           <img src="./images/shipping/shipping.png" alt="" />

@@ -1,6 +1,7 @@
 import React from "react";
 
 const Footer = () => {
+  const today = new Date();
   return (
     <>
       <div className="footer-container">
@@ -35,13 +36,21 @@ const Footer = () => {
         <div className="column-f2">
           <div>
             <h3> Information</h3>
-            <p>About Us </p>
-            <p>Privacy Policy</p>
-            <p>Terms Conditions</p>
-            <p>Infomation </p>
+            <ul>
+              <li>About Us</li>
+              <li>Privacy Policy</li>
+              <li>Terms Conditions</li>
+              <li>Infomation </li>
+            </ul>
           </div>
           <div>
             <h3> Service</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Privacy Policy</li>
+              <li>Terms Conditions</li>
+              <li>Infomation </li>
+            </ul>
           </div>
           <div>
             <h3>Extra</h3>
@@ -57,7 +66,7 @@ const Footer = () => {
             <h3>Our Offers</h3>
           </div>
         </div>
-        <footer>All right reserved by ShaileshTech</footer>
+        <footer>Copyright &copy; by ShaileshTech {today.getFullYear()}</footer>
       </div>
     </>
   );

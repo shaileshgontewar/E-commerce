@@ -1,22 +1,28 @@
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 import "./product.css";
 
 const ProductCard = (props) => {
-  const { productId, image, namep, pPrice } = props;
+  const { imageurl, name, price } = props;
   return (
     <>
-      <div className="box product" key={productId}>
-        <img src={image} alt="hello" />
-        <b className="pname">{namep}</b>
-        <div className="star">
-          {<AiFillStar />} {<AiFillStar />}
-          {<AiFillStar />}
-          {<AiFillStar />}
-          {<AiFillStar />}
+      <NavLink
+        state={{ imageurl: imageurl, name: name, price: price }}
+        to="/information"
+      >
+        <div className="box product">
+          <img src={imageurl} alt="hello" />
+          <b className="pname">{name}</b>
+          <div className="star">
+            {<AiFillStar />} {<AiFillStar />}
+            {<AiFillStar />}
+            {<AiFillStar />}
+            {<AiFillStar />}
+          </div>
+          <b className="price">${price}</b>
         </div>
-        <b className="price">${pPrice}</b>
-      </div>
+      </NavLink>
     </>
   );
 };

@@ -4,7 +4,6 @@ import Product from "./Main/Product";
 const Iphone = () => {
   return (
     <>
-      <div>Iphone</div>
       <Product />
     </>
   );

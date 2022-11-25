@@ -1,7 +1,13 @@
 .head-list{
     display: flex;
     justify-content: space-between;
-
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: #fff;
+    z-index: 1000;
 }
  .head-list1 > ul
  ,.head-list2 >ul
@@ -11,7 +17,6 @@
     font-size: 1.8rem;
     list-style: none;
     margin: 1rem 5rem;
-   
 }
 header {
     background: #f6f9fc;
@@ -23,15 +28,26 @@ header {
     align-items: center;
     padding: 1rem;
     box-shadow: -1px 15px 17px -8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 32px;
+    left: 0;
+    right: 0;
+    z-index: 900;
   }
   .logo {
-    height: 3rem;
+    font-size: 3rem;
+    text-decoration: underline #7B68EE;
+  }
+  .logo span{
+    color: orangered;
+    font: 900;
+    font-style: italic;
+    text-shadow: .1rem .4rem  .8rem #7B68EE;
   }
   button{
     border: none;
     font-size: 3.5rem;
     background: none;
-
   }
   .mobile-menu-icon{
     display: none;
@@ -57,11 +73,9 @@ header {
   .Navbar-list > li > .navlink:hover {
     color:#7B68EE;
     letter-spacing: 0.1rem;
-    
   }
   .Navbar-list > li {
     list-style: none;
-    
   }
   nav > ul > li > .navlink.active {
     color: #7B68EE;
@@ -92,6 +106,9 @@ header {
     height: 20rem;
     text-align: center;
 }
+.footer-container .column-f1 div > p{
+  text-align: justify;
+}
 .footer-container .column-f1 div img{
   margin: 4rem 2rem;
 }
@@ -109,9 +126,15 @@ header {
     text-align: center;
    
 }
+
+.footer-container .column-f2 div > ul > li{
+  list-style-type: none;
+  text-align: left;
+}
 footer{
   font-size: 2rem;
-  padding: 2rem 5rem;
+  padding: 2rem;
+  text-align: center;
 }
 /*--------------------------------- responsive screen--------------------- */
 @media only screen and (max-width:768px)
@@ -124,7 +147,7 @@ footer{
 }
   header .main-nav{
     margin: 0;
-    z-index: 1;
+    z-index: 1000;
     background-color: black;
     opacity: 0.6;
     width: 100%;

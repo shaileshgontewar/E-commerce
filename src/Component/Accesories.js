@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { AiFillStar } from "react-icons/ai";
+import ProductCard from "./Main/ProductCard";
 
 const Accesories = () => {
   const [post, setPost] = useState([]);
@@ -18,18 +18,12 @@ const Accesories = () => {
       <div className="product-container">
         {post.map((value) => {
           return (
-            <div className="box product" key={value.id}>
-              <img src={value.imageurl} alt="" />
-              <b className="pname">{value.name}</b>
-              <div className="star">
-                {" "}
-                {<AiFillStar />} {<AiFillStar />}
-                {<AiFillStar />}
-                {<AiFillStar />}
-                {<AiFillStar />}
-              </div>
-              <b className="price">${value.price}</b>
-            </div>
+            <ProductCard
+              key={value.id}
+              imageurl={value.imageurl}
+              name={value.name}
+              price={value.price}
+            />
           );
         })}
       </div>
