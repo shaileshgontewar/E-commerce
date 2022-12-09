@@ -1,3 +1,6 @@
+*{
+  list-style-type: none;
+}
 .head-list{
     display: flex;
     justify-content: space-between;
@@ -42,7 +45,7 @@ header {
     color: orangered;
     font: 900;
     font-style: italic;
-    text-shadow: .1rem .4rem  .8rem #7B68EE;
+    /* text-shadow: .1rem .4rem  .8rem #7B68EE; */
   }
   button{
     border: none;
@@ -65,11 +68,7 @@ header {
     font-weight: 500;
     color:black ;
   }
-  .Navbar-list >  .toggle_box:hover {
-    cursor: pointer;
-    color:#7B68EE;
-
-  }
+ 
   .Navbar-list > li > .navlink:hover {
     color:#7B68EE;
     letter-spacing: 0.1rem;
@@ -82,8 +81,37 @@ header {
     font-weight: bold;
     text-decoration: none;
   }
-  
-/*-------------------------------- fotter-------------------- */
+  .Navbar-list .toggle_box {
+    position: relative;
+  }
+  .store-container{
+    background-color: #FEFCF3;
+    width: 30rem;
+    position: absolute;
+    top: 2.5rem;
+    border-radius: 1rem;
+    display: none;
+  }
+  .store-container .row{
+    display: flex;
+    padding: 2rem;
+    
+  }
+  .store-container ul li {
+    font-size: 1.2rem;
+ color: black;
+  }
+  .Navbar-list .toggle_box:hover{
+    cursor: pointer;
+    color:#7B68EE;
+  }
+  .Navbar-list .toggle_box:hover .store-container {
+    display: block;
+  }
+  .store-container ul {
+    padding: 1.5rem;
+  }
+/*-------------------------------- footer-------------------- */
 .footer-container {
     margin-top: 5rem;
     height: auto;
@@ -109,8 +137,20 @@ header {
 .footer-container .column-f1 div > p{
   text-align: justify;
 }
-.footer-container .column-f1 div img{
-  margin: 4rem 2rem;
+.footer-container .column-f1 div .icon{
+  display: inline-block;
+  margin: 4rem 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.twitter{
+  color:#1DA1F2;
+  margin-right: 1rem;
+  
+}
+.instagram{
+  color: #C13584 ;
+  margin-right: 1rem;
 }
 .footer-container .column-f2 {
     display: flex;
@@ -131,8 +171,12 @@ header {
   list-style-type: none;
   text-align: left;
 }
+.facebook{
+  color: #4267B2;
+  cursor: pointer;
+}
 footer{
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 2rem;
   text-align: center;
 }

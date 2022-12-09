@@ -7,11 +7,15 @@ const Macbook = () => {
   const [post, setPost] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://shailesh-ecommerce.herokuapp.com/laptop")
-      .then((response) => {
-        setPost(response.data);
-      });
+    try {
+      axios
+        .get("https://web-production-167a.up.railway.app/laptop")
+        .then((response) => {
+          setPost(response.data);
+        });
+    } catch (error) {
+      console.log(error);
+    }
   }, []);
   return (
     <>

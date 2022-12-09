@@ -265,25 +265,7 @@ const CardsData = [
     qnty: 0,
     price: 16000,
   },
-  {
-    id: 28,
-    imageurl:
-      "http://e7.pngegg.com/pngimages/661/870/png-clipart-lenovo-vibe-k5-plus-lenovo-vibe-p1-lenovo-smartphones-android-android-gadget-mobile-phone.png",
-    name: "lenovo",
-    description: " ",
-    category: "Mobile",
-    qnty: 0,
-    price: 10000,
-  },
-  {
-    id: 30,
-    imageurl: "http://cdn9.pngable.com/9/1/14/FyXyMnTqWn/blackberry.jpg",
-    name: "Blackberry ",
-    description: " ",
-    category: "Mobile",
-    qnty: 0,
-    price: 7000,
-  },
+
   {
     id: 31,
     imageurl:

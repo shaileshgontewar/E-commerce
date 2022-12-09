@@ -4,14 +4,14 @@ import { NavLink } from "react-router-dom";
 import "./product.css";
 
 const ProductCard = (props) => {
-  const { imageurl, name, price } = props;
+  const { imageurl, name, price, id } = props;
   return (
     <>
       <NavLink
-        state={{ imageurl: imageurl, name: name, price: price }}
-        to="/information"
+        state={{ imageurl: imageurl, name: name, price: price, id: id }}
+        to={`/information/${id}`}
       >
-        <div className="box product">
+        <div className="box product" id={id}>
           <img src={imageurl} alt="hello" />
           <b className="pname">{name}</b>
           <div className="star">

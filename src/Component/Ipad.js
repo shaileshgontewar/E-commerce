@@ -8,7 +8,7 @@ const Ipad = () => {
 
   const getData = () => {
     axios
-      .get("https://shailesh-ecommerce.herokuapp.com/api/mobile")
+      .get("https://web-production-167a.up.railway.app/mobile")
       .then((response) => {
         setPost(response.data);
       });

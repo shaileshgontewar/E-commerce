@@ -8,7 +8,7 @@ const Accesories = () => {
 
   useEffect(() => {
     axios
-      .get("https://shailesh-ecommerce.herokuapp.com/myData")
+      .get("https://web-production-167a.up.railway.app/myData")
       .then((response) => {
         setPost(response.data);
       });

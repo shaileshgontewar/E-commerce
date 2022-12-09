@@ -6,7 +6,6 @@ import Slide from "./Slide/slider";
 const Home = () => {
   return (
     <>
-      {/* <div>Home</div> */}
       <Slide></Slide>
       <HomeProduct />
       <Support />

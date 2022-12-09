@@ -30,7 +30,27 @@ const Header = () => {
                 Home
               </NavLink>
             </li>
-            <li className="toggle_box">store</li>
+            <li className="toggle_box">
+              store
+              <div className="store-container">
+                <div className="row">
+                  <ul>
+                    <li>iphone</li>
+                    <li>ipad</li>
+                    <li>iphone</li>
+                    <li>macbook</li>
+                    <li>Accesories</li>
+                  </ul>
+                  <ul>
+                    <li>iphone</li>
+                    <li>ipad</li>
+                    <li>iphone</li>
+                    <li>macbook</li>
+                    <li>Accesories</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
             <li>
               <NavLink className="navlink" to="/iphone">
                 iphone

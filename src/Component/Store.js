@@ -5,7 +5,6 @@ import StoreProduct from "./Main/StoreProduct";
 const Store = () => {
   return (
     <>
-      {/* <div>Store</div> */}
       <StoreProduct />
     </>
   );

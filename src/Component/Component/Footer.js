@@ -1,4 +1,6 @@
 import React from "react";
+import { BsFacebook } from "react-icons/bs";
+import { FaInstagramSquare, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   const today = new Date();
@@ -14,7 +16,6 @@ const Footer = () => {
               ever.Since the 1500s, when an unknown printer.
             </p>
           </div>
-
           <div>
             <h3>Follow Us</h3>
             <p>
@@ -22,8 +23,11 @@ const Footer = () => {
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever.Since the 1500s, when an unknown printer.
             </p>
-            <img src="./images/Web/facebook.svg" alt="ff" />
-            <img src="./images/Web/twitter.svg" alt="tt" />
+            <span className="icon">
+              <FaTwitter className="twitter" />
+              <FaInstagramSquare className="instagram" />
+              <BsFacebook className="facebook" />
+            </span>
           </div>
           <div>
             <h3>Contect Us</h3>
@@ -54,19 +58,40 @@ const Footer = () => {
           </div>
           <div>
             <h3>Extra</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Privacy Policy</li>
+              <li>Terms Conditions</li>
+              <li>Infomation </li>
+            </ul>
           </div>
           <div>
             <h3>My Account</h3>
+            <span className="icons">
+              <BsFacebook className="facebook" />
+            </span>
           </div>
           <div>
             <h3>Useful Links</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Privacy Policy</li>
+              <li>Terms Conditions</li>
+              <li>Infomation </li>
+            </ul>
           </div>
           <div>
             {" "}
             <h3>Our Offers</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Privacy Policy</li>
+              <li>Terms Conditions</li>
+              <li>Infomation </li>
+            </ul>
           </div>
         </div>
-        <footer>Copyright &copy; by ShaileshTech {today.getFullYear()}</footer>
+        <footer>copyright &copy; {today.getFullYear()} shaileshTech</footer>
       </div>
     </>
   );
