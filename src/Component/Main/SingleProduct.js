@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-const Information = () => {
+const SingleProduct = () => {
   const location = useLocation();
   const { imageurl, name, price } = location.state;
   return (
@@ -15,4 +15,4 @@ const Information = () => {
     </>
   );
 };
-export default Information;
+export default SingleProduct;

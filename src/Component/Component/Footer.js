@@ -91,7 +91,14 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <footer>copyright &copy; {today.getFullYear()} shaileshTech</footer>
+        <footer>
+          <div>copyright &copy; {today.getFullYear()} shaileshTech</div>
+          <span className="icon">
+            <FaTwitter className="twitter" />
+            <FaInstagramSquare className="instagram" />
+            <BsFacebook className="facebook" />
+          </span>
+        </footer>
       </div>
     </>
   );

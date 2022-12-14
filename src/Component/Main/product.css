@@ -98,6 +98,7 @@ align-items: center;
 /** =============== Single Product ================ */
 .single-product{
     width: 90%;
+    height: 50rem ;
     margin: 1.5rem auto;
     border: .1rem solid #e8eaeb;
     display: flex;
@@ -108,7 +109,8 @@ align-items: center;
     flex-wrap: wrap;
 }
 .single-product img{
-    width: 50%;
+    width: 40%;
+    padding: 2rem;
 }
 
 .single-product > .pname{
@@ -122,5 +124,6 @@ align-items: center;
 .single-product > .add-product{
     background-color:#33A0FF ;
     color: #FFFFFF;
-    padding: .5rem;
+    padding: 1rem;
+    font-size: 2rem;
 }

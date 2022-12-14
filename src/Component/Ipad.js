@@ -1,26 +1,18 @@
 import React from "react";
-import axios from "axios";
-import { useEffect, useState } from "react";
+import useFetchData from "./FetchData";
 import ProductCard from "./Main/ProductCard";
 
 const Ipad = () => {
-  const [post, setPost] = useState([]);
+  const url = "https://web-production-167a.up.railway.app/mobile";
+  const [post] = useFetchData(url);
 
-  const getData = () => {
-    axios
-      .get("https://web-production-167a.up.railway.app/mobile")
-      .then((response) => {
-        setPost(response.data);
-      });
-  };
-
-  useEffect(() => getData(), []);
   return (
     <>
       <div className="product-container">
         {post.map((value) => {
           return (
             <ProductCard
+              id={value.id}
               key={value.id}
               imageurl={value.imageurl}
               name={value.name}
