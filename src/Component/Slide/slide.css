@@ -8,6 +8,7 @@
 }
 .slide-img img{
     width: 95%;
-    height: auto;
+    height: 40rem;
     margin: auto;
+    object-fit: contain;
 }

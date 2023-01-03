@@ -1,9 +1,11 @@
-import React from "react";
-import CardsData from "./CardsData";
+import React, { useContext } from "react";
+import { GlobalStore } from "../../Context/GlobalContext";
 import ProductCard from "./ProductCard";
-import "./product.css";
+import CardsData from "../../Context/CardsData";
 
 const Product = () => {
+  const { addTocart } = useContext(GlobalStore);
+  console.log(CardsData);
   return (
     <>
       <div className="product-container">
@@ -17,6 +19,7 @@ const Product = () => {
               imageurl={value.imageurl}
               name={value.name}
               price={value.price}
+              addTocart={() => addTocart(value)}
             />
           );
         })}

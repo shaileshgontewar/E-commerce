@@ -1,10 +1,10 @@
-import React from "react";
-import "./Style.css";
-import { FaUserAlt } from "react-icons/fa";
-import { BsFillBagFill } from "react-icons/bs";
+import React, { useContext } from "react";
+import { FaUserAlt, FaShoppingCart } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { GlobalStore } from "../../Context/GlobalContext";
 
 const TopHeader = () => {
+  const { cartItem } = useContext(GlobalStore);
   return (
     <>
       <nav className="head-list">
@@ -21,15 +21,18 @@ const TopHeader = () => {
               <div className="login-container">
                 <ul>
                   <li>
-                    <NavLink to="/profile">Lonin</NavLink>
+                    <NavLink to="/profile">Login</NavLink>
                   </li>
                   <li>profile</li>
                   <li>setting</li>
                 </ul>
               </div>
             </li>
-            <li>
-              <BsFillBagFill />
+            <li className="cart">
+              <NavLink to="/singleproduct">
+                <FaShoppingCart />
+                <span> {cartItem.length === 0 ? " " : cartItem.length}</span>
+              </NavLink>
             </li>
           </ul>
         </div>

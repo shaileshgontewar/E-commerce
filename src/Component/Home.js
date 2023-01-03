@@ -6,7 +6,7 @@ import Slide from "./Slide/slider";
 const Home = () => {
   return (
     <>
-      <Slide></Slide>
+      <Slide />
       <HomeProduct />
       <Support />
     </>

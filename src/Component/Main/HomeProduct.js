@@ -1,5 +1,6 @@
 import React from "react";
 import Product from "./Product";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const HomeProduct = () => {
   return (
@@ -7,8 +8,13 @@ const HomeProduct = () => {
       <div className="home-product-container">
         <h2>Best Seller</h2>
         <nav className="search-nav">
-          <ul className="Navbar-list">
-            <li>All</li>
+          <ul className="search-list">
+            <li>
+              All
+              <span>
+                <IoMdArrowDropdown />
+              </span>
+            </li>
             <li>mac</li>
             <li>IPHONE</li>
             <li>ipad</li>

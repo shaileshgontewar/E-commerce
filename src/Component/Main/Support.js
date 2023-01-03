@@ -1,5 +1,4 @@
 import React from "react";
-import "./product.css";
 const Support = () => {
   return (
     <>

@@ -21,7 +21,7 @@ const Slide = () => {
             return (
               <div key={value.id}>
                 <h3>{value.title}</h3>
-                <img src={value.cover} alt="hello" />
+                <img src={value.cover} alt="slider-img" />
               </div>
             );
           })}

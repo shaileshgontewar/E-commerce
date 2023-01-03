@@ -1,22 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalStore } from "../Context/GlobalContext";
 import ProductCard from "./Main/ProductCard";
-import useFetchData from "./FetchData";
+import CardsData from "../Context/CardsData";
+// import useFetchData from "./FetchData";
 
 const Accesories = () => {
-  const url = "https://web-production-167a.up.railway.app/myData";
-  const [post] = useFetchData(url);
+  // const url = "https://web-production-167a.up.railway.app/myData";
+  // const [post] = useFetchData(url);
+  const { addTocart } = useContext(GlobalStore);
 
   return (
     <>
       <div className="product-container">
-        {post.map((value) => {
+        {CardsData.filter((value) => {
+          return value.category === "Accesories";
+        }).map((value) => {
           return (
             <ProductCard
-              id={value.id}
               key={value.id}
               imageurl={value.imageurl}
               name={value.name}
               price={value.price}
+              addTocart={() => addTocart(value)}
             />
           );
         })}

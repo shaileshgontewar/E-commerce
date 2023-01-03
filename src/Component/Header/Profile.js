@@ -4,7 +4,7 @@ const Profile = () => {
   return (
     <>
       <div className="login-main">
-        <h2>Sigin Form</h2>
+        <h2>Login Form</h2>
         <form action="" className="form">
           <div className="username">
             <label htmlFor="">Username</label>

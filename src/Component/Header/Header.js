@@ -4,14 +4,14 @@ import TopHeader from "./Topheader";
 import { HiMenu } from "react-icons/hi";
 import { ImCross } from "react-icons/im";
 
-const Header = () => {
+const Header = ({ cartItem }) => {
   const [mobile, setMobile] = useState(false);
   const handleClick = () => {
     setMobile(!mobile);
   };
   return (
     <>
-      <TopHeader />
+      <TopHeader cartItem={cartItem} />
       <header>
         <div className="head-nav">
           <b className="logo">
